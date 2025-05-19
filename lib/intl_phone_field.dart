@@ -477,16 +477,10 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
                           package: 'intl_phone_field',
                           width: 32,
                         )
-                      : _selectedCountry.code == 'SY'
-                          ? Image.asset(
-                              "assets/sy.png",
-                              height: 24,
-                              width: 24,
-                            )
-                          : Text(
-                              _selectedCountry.flag,
-                              style: const TextStyle(fontSize: 18),
-                            ),
+                      : Text(
+                          _selectedCountry.flag,
+                          style: const TextStyle(fontSize: 18),
+                        ),
                   const SizedBox(width: 8),
                 ],
                 FittedBox(
