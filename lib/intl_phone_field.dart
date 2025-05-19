@@ -480,6 +480,8 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
                       : _selectedCountry.code == 'SY'
                           ? Image.asset(
                               "assets/sy.png",
+                              height: 24,
+                              width: 24,
                             )
                           : Text(
                               _selectedCountry.flag,
