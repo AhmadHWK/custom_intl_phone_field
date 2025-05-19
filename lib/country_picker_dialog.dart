@@ -119,7 +119,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                 shrinkWrap: true,
                 itemCount: _filteredCountries.length,
                 itemBuilder: (ctx, index) => Column(
-                  mainAxisAlignment: widget.languageCode == 'ar' ? MainAxisAlignment.start : MainAxisAlignment.end,
+                  mainAxisAlignment: widget.languageCode == 'ar' ? MainAxisAlignment.end : MainAxisAlignment.start,
                   children: <Widget>[
                     ListTile(
                       leading: kIsWeb
