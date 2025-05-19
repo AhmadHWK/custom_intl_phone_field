@@ -97,6 +97,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
             Padding(
               padding: widget.style?.searchFieldPadding ?? const EdgeInsets.all(0),
               child: TextField(
+                textDirection: TextDirection.rtl,
                 cursorColor: widget.style?.searchFieldCursorColor,
                 decoration: widget.style?.searchFieldInputDecoration ??
                     InputDecoration(
@@ -118,6 +119,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                 shrinkWrap: true,
                 itemCount: _filteredCountries.length,
                 itemBuilder: (ctx, index) => Column(
+                  mainAxisAlignment: widget.languageCode == 'ar' ? MainAxisAlignment.start : MainAxisAlignment.end,
                   children: <Widget>[
                     ListTile(
                       leading: kIsWeb
